@@ -8,7 +8,7 @@
     <meta name="description" content="CGC Malanday" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
-    <link rel="icon" type="image/x-icon" href="/cgcsimplesite/assets/cgclogo.png">
+    <link rel="icon" type="image/x-icon" href="/cgcsimplesite/assets/cgclogo-089cc769.png">
     <link
       rel="stylesheet"
       href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
@@ -55,6 +55,12 @@
       .blue {
         color: #3d4161;
       }
+      .navy {
+        background-color: #0a0525;
+      }
+      .text-yellow { 
+        color: rgb(255, 204, 0);
+      }
       .hover-yellow:hover {
         color: rgb(255, 204, 0);
       }
@@ -69,7 +75,7 @@
         border: 3px solid rgb(255, 204, 0);
       }
       .logo h4 {
-        letter-spacing: 2px;
+        letter-spacing: 1px;
       }
       .logo h4 span {
         color: rgb(255, 204, 0);
@@ -91,13 +97,39 @@
       .bg-custom-gray { 
         background: #f8fafc;
       }
+      @media screen and (max-width: 1024px) {
+        ul#nav-scroll {
+          margin-bottom: 10px;
+        }
+      }
+      @media screen and (max-width: 567px){
+        .b-title, .subtitle { 
+          text-align: center;
+        }
+        #church-theme .justify-start, #church-theme .justify-end, #church-theme .flex-wrap {
+          justify-content: center;
+        }
+        #church-theme .items-start, #church-theme .items-end { 
+          align-items: center;
+        }
+        #church-theme p, #church-theme h3 { 
+          text-align: center;
+        }
+        #church-theme img { 
+          max-width: 220px;
+        }
+        .map-frame iframe{ 
+          max-width: 400px;
+        }
+      }
+
     </style>
     <script type="module" crossorigin src="/cgcsimplesite/assets/index-146ff2fb.js"></script>
     <link rel="stylesheet" href="/cgcsimplesite/assets/index-73168167.css">
   </head>
   <body
     class="leading-normal tracking-normal text-white gradient-upper"
-    style="font-family: 'Roboto Slab', sans-serif"
+    style="font-family: 'Roboto Slab', sans-serif; overflow-x: hidden;"
   >
     <!--Nav-->
     <nav id="header" class="fixed w-full z-30 top-0 text-white pl-2 pr-2">
@@ -110,15 +142,15 @@
             href="#"
           >
             <div class="flex items-center logo">
-              <img src="../assets/cgclogo.png" alt="" width="45" class="mr-2" />
-              <h4><span>CGC</span> MALANDAY -</h4>
+              <img src="/cgcsimplesite/assets/cgclogo-089cc769.png" alt="cgclogo" width="45" class="mr-2" />
+              <h4><span>CGC</span> MALANDAY</h4>
             </div>
           </a>
         </div>
         <div class="block lg:hidden pr-4">
           <button
             id="nav-toggle"
-            class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            class="flex items-center p-1 text-yellow hover:text-yellow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
             <svg
               class="fill-current h-6 w-6"
@@ -131,7 +163,7 @@
           </button>
         </div>
         <div
-          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-transparent lg:bg-transparent text-black p-4 lg:p-0 z-20"
           id="nav-content"
         >
           <ul
@@ -160,12 +192,13 @@
               >
             </li>
           </ul>
-          <button
+          <a
             id="navAction"
+            href="#join"
             class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
             Contact
-          </button>
+        </a>
         </div>
       </div>
     </nav>
@@ -178,7 +211,7 @@
         <div
           class="flex flex-col w-full md:w-3/5 justify-center items-center md:text-center"
         >
-          <h1 class="my-4 text-5xl font-bold title" data-aos="fade-up">
+          <h1 class="my-4 text-5xl font-bold title b-title" data-aos="fade-up">
             <span>C</span>HRISTIAN <span>G</span>OSPEL <span>C</span>ENTER
           </h1>
           <p class="subtitle text-1xl mb-8">
@@ -187,7 +220,7 @@
           </p>
           <a
             class="btn-yellow-outlined white mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-            data-aos="flip-up" href="#church-theme"
+            data-aos="fade-down" href="#church-theme"
           >
             LEARN MORE
         </a>
@@ -265,7 +298,7 @@
             </p>
           </div>
           <div class="w-full sm:w-1/2 flex justify-start">
-            <img src="../assets/CONNECT.png" width="300" alt="connect" />
+            <img src="/cgcsimplesite/assets/CONNECT-573c39d4.png" width="300" alt="connect" />
           </div>
         </div>
         <div
@@ -273,7 +306,7 @@
           data-aos="fade-left"
         >
           <div class="w-full sm:w-1/2 flex flex-wrap justify-end items-end">
-            <img src="../assets/GROW.png" width="300" alt="grow" />
+            <img src="/cgcsimplesite/assets/GROW-74238c45.png" width="300" alt="grow" />
           </div>
           <div class="w-full sm:w-1/2 p-6">
             <div class="align-middle">
@@ -301,7 +334,7 @@
             >
               Commissioned to Serve
             </h3>
-            <p class="text-gray-600 mb-8">
+            <p class="text-gray-600">
               AUG - Gifted to Build each other up <br />
               SEP - The Church and Social Responsibilities <br />
               OCT - Unshakeable Dedication <br />
@@ -310,7 +343,7 @@
             </p>
           </div>
           <div class="w-full sm:w-1/2 flex justify-start">
-            <img src="../assets/COMMISSION.png" width="300" alt="commission" />
+            <img src="/cgcsimplesite/assets/COMMISSION-b0308265.png" width="300" alt="commission" />
           </div>
         </div>
       </div>
@@ -621,24 +654,28 @@
       </div>
     </section>
 
-    <section class="bg-custom-gray py-8">
+    <section class="bg-custom-gray py-8" id="join">
       <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
         <h2
-          class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 title"
+          class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 title" data-aos="flip-down"
         >
        Come and Join us! :)
         </h2>
 
         <div class="flex flex-wrap flex-column justify-center mt-10">
-          <div>
+          <div class="map-frame">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15435.80374482129!2d120.952118!3d14.715366!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b399c8cc1667%3A0x47518f473e182606!2sChristian%20Gospel%20Center%20-%20Malanday!5e0!3m2!1sen!2sph!4v1690716410959!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div class="mt-2 p-5">
-            <div class="flex justify-center">
-            <img src="../assets/cgclogo.png" alt="" width="300" class="mb-5 flex justify-center">
+          <div class="mt-2 p-10">
+            <div class="flex justify-center" data-aos="flip-right">
+            <img src="/cgcsimplesite/assets/cgclogo-089cc769.png" alt="cgclogo" width="250" class="mb-5 flex justify-center">
           </div>
-            Address: PX82+4RX, Marcelo H. Del Pilar St, <br> Valenzuela, 1444 Metro Manila <br><br>
-            Email: <a style="text-decoration: underline;" href="mailto:cgcmalandayconnect@gmail.com">cgcmalandayconnect@gmail.com</a>
+          <p data-aos="zoom-out">
+       
+            <b>Address:</b> 101, Marcelo H. Del Pilar St, <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Valenzuela, 1444 Metro Manila <br>
+            <b>Email:</b> <a style="text-decoration: underline;" href="mailto:cgcmalandayconnect@gmail.com">cgcmalandayconnect@gmail.com</a><br><br>
+            <b class="flex flex-wrap items-center">Follow us on: <a href="https://facebook.com/2002march10"><img src="/cgcsimplesite/assets/fb-icon-193ba9b3.png" alt="fb-icon" width="30" class="mt-2 ml-2"></a></b>
+          </p>
         </div>
       </div>
     </section>
@@ -678,7 +715,7 @@
         </g>
       </g>
     </svg>
-    <section class="container mx-auto text-center py-6 mb-12">
+    <section class="container mx-auto text-center py-6 mb-12" data-aos="zoom-in-down">
       <h2
         class="w-full my-2 text-5xl font-bold leading-tight text-center title"
       >
@@ -699,79 +736,29 @@
       </button> -->
     </section>
     <!--Footer-->
-    <footer class="bg-white">
+    <footer class="bg-blue">
       <div class="container mx-auto px-8">
-        <div class="w-full flex flex-col md:flex-row py-6">
-          <div class="flex-1 mb-6 text-black">
+        <div class="w-full flex flex-col md:flex-row py-4">
+          <div class="flex-1 text-black">
             <a
-              class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+              class="text-white no-underline hover:no-underline font-bold text-1xl lg:text-1xl flex items-center"
               href="#"
             >
-              <img src="../assets/cgclogo.png" alt="" width="100" />
+              <img src="/cgcsimplesite/assets/cgclogo-089cc769.png" alt="cgclogo" width="60"/>
+              <p class="ml-2 text-white title">2023 | Christian Gospel Center - Malanday</p>
             </a>
           </div>
-          <div class="flex-1 flex justify-end">
-          <div class="mr-10">
-            <p class="uppercase text-gray-500 md:mb-6">Social</p>
-            <ul class="list-reset mb-6">
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a
-                  href="#"
-                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
-                  >Facebook</a
-                >
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a
-                  href="#"
-                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
-                  >Linkedin</a
-                >
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a
-                  href="#"
-                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
-                  >Twitter</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="">
-            <p class="uppercase text-gray-500 md:mb-6">Church</p>
-            <ul class="list-reset mb-6">
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a
-                  href="#"
-                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
-                  >Home</a
-                >
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a
-                  href="#"
-                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
-                  >Church Theme</a
-                >
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a
-                  href="#"
-                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
-                  >Fellowships</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
         </div>
       </div>
 
     </footer>
-    <!-- jQuery if you need it
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  -->
+ 
     <script>
+    
+    if($(window).width() < 1024){
+      $('#church-theme .flex').attr("data-aos", "fade-down");
+   }
       var scrollpos = window.scrollY;
       var header = document.getElementById("header");
       var navcontent = document.getElementById("nav-content");
@@ -796,7 +783,7 @@
             toToggle[i].classList.remove("text-white");
           }
           header.classList.add("shadow");
-          navcontent.classList.remove("bg-gray-100");
+          navcontent.classList.remove("bg-trasparent");
           navcontent.classList.add("bg-white");
         } else {
           header.classList.remove("bg-white");
@@ -812,7 +799,7 @@
 
           header.classList.remove("shadow");
           navcontent.classList.remove("bg-white");
-          navcontent.classList.add("bg-gray-100");
+          navcontent.classList.add("bg-transparent");
         }
       });
     </script>
